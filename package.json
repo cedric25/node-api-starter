@@ -1,0 +1,16 @@
+{
+  "name": "start-node",
+  "version": "0.1.0",
+  "description": "Simple starting point to create a Node.js API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Cedric Nicoloso <cedric.nicoloso@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
