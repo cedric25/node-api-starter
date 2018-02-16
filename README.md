@@ -5,10 +5,13 @@ Simple starting point to create a Node.js API.
 Includes:
  - A router with one route
  - Test stack with jest
+ - ESLint with standard
 
 ## Steps done to create this project
 
 No generator here, project created from scratch
+
+### App
 
  - Update your node version
 Use [n](https://github.com/tj/n) (My choice by far over nvm)
@@ -41,3 +44,7 @@ Use [n](https://github.com/tj/n) (My choice by far over nvm)
  - Run ```npx eslint . --ext .js```
  - Add a proper npm script ```"lint": "eslint . --ext .js"```
  - Test it: ```npm run lint```
+
+## editorconfig
+
+ - Add a quick editorconfig to maintain to common formatting rules across team members
