@@ -1,12 +1,14 @@
 {
   "name": "start-node",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Simple starting point to create a Node.js API",
   "main": "server.js",
   "scripts": {
-    "start": "PORT=3001 node server",
-    "start:debug": "PORT=3001 LOG_LEVEL=debug node server",
-    "test": "jest",
+    "start": "npm run start:dev",
+    "start:dev": "PORT=3001 node server | npx bunyan --time local --output short",
+    "start:debug": "LOG_LEVEL=debug npm run start:dev",
+    "start:prod": "NODE_ENV=production node server",
+    "test": "FORCE_COLOR=true jest | npx bunyan --time local --output short",
     "lint": "eslint . --ext .js"
   },
   "keywords": [],
@@ -19,7 +21,6 @@
     "morgan": "^1.9.0"
   },
   "devDependencies": {
-    "bunyan-format": "^0.2.1",
     "eslint": "^4.17.0",
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-plugin-import": "^2.8.0",

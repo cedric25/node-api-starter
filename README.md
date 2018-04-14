@@ -56,8 +56,8 @@ No generator here, project created from scratch
 ### Logs (bunyan)
 
  - `npm i bunyan`
- - `npm i bunyan-format --save-dev` for dev logs
  - Create the config you wish such as in `src/logger.js`
+ - Create a npm script that uses bunyan CLI (Makes logs more readable in dev)
 
 ### Access logs (morgan)
 
