@@ -3,9 +3,11 @@
 Simple starting point to create a Node.js API.
 
 Includes:
- - One endpoint: `/`
- - Test stack with jest
- - ESLint with standard
+ - One route: `/` (GET + POST)
+ - Test stack with [jest](https://facebook.github.io/jest/)
+ - ESLint with [standard](https://standardjs.com/)
+ - Logs with [bunyan](https://github.com/trentm/node-bunyan)
+ - Access logs with [morgan](https://github.com/expressjs/morgan)
 
 ## How to use
 
@@ -44,6 +46,13 @@ No generator here, project created from scratch
  - Add a proper npm script: `"test": "jest"`
  - Test it: `npm t`
 
+### ESLint
+
+ - Install [all necessary dependencies](https://github.com/standard/eslint-config-standard) to use [Standard](https://standardjs.com/) through ESLint
+ - Create your .eslintrc file
+ - Add a proper npm script `"lint": "eslint . --ext .js"`
+ - Test it: `npm run lint`
+
 ### Logs (bunyan)
 
  - `npm i bunyan`
@@ -54,13 +63,6 @@ No generator here, project created from scratch
 
  - `npm i morgan`
  - Use it in the express server: `app.use(morgan('tiny'))`
-
-### ESLint
-
- - Install [all necessary dependencies](https://github.com/standard/eslint-config-standard) to use [Standard](https://standardjs.com/) through ESLint
- - Create your .eslintrc file
- - Add a proper npm script `"lint": "eslint . --ext .js"`
- - Test it: `npm run lint`
 
 ### editorconfig
 
