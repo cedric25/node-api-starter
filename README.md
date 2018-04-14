@@ -44,6 +44,12 @@ No generator here, project created from scratch
  - Add a proper npm script: `"test": "jest"`
  - Test it: `npm t`
 
+### Logs (bunyan)
+
+ - `npm i bunyan`
+ - `npm i bunyan-format --save-dev` for dev logs
+ - Create the config you wish such as in `src/logger.js`
+
 ### Access logs (morgan)
 
  - `npm i morgan`
