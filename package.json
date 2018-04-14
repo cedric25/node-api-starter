@@ -4,7 +4,8 @@
   "description": "Simple starting point to create a Node.js API",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
+    "start": "PORT=3001 node server",
+    "start:debug": "PORT=3001 LOG_LEVEL=debug node server",
     "test": "jest",
     "lint": "eslint . --ext .js"
   },
