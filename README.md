@@ -44,6 +44,11 @@ No generator here, project created from scratch
  - Add a proper npm script: `"test": "jest"`
  - Test it: `npm t`
 
+### Access logs (morgan)
+
+ - `npm i morgan`
+ - Use it in the express server: `app.use(morgan('tiny'))`
+
 ### ESLint
 
  - Install [all necessary dependencies](https://github.com/standard/eslint-config-standard) to use [Standard](https://standardjs.com/) through ESLint

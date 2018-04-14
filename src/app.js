@@ -1,8 +1,11 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const morgan = require('morgan')
 const { add } = require('./utils')
 
 const app = express()
+
+app.use(morgan('tiny'))
 
 app.get('/', function (req, res) {
   const result = add(2, 2)
