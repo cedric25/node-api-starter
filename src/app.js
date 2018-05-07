@@ -8,13 +8,13 @@ const app = express()
 
 app.use(morgan('tiny'))
 
-app.get('/', function (req, res) {
-  log.info('Handling request for endpoint: GET /')
+app.get('/', (req, res) => {
+  log.debug('Handling request for endpoint: GET /')
   const result = add(2, 2)
   res.send(`Hello World, result is ${result}`)
 })
 
-app.post('/', bodyParser.json(), function (req, res) {
+app.post('/', bodyParser.json(), (req, res) => {
   log.debug('Handling request for endpoint: POST /')
   res.send(`You sent me ${JSON.stringify(req.body)}`)
 })
