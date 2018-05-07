@@ -30,6 +30,7 @@ git commit -m ":zap: Init project"
  - Run server
 ```
 npm start // yarn start
+npm run start:debug // yarn start:debug
 ```
 
  - Run tests
