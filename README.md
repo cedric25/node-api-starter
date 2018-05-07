@@ -12,20 +12,36 @@ Includes:
 ## How to use
 
  - Clone this project
- - Remove git history and create your own:
+```
+git clone https://github.com/cedric25/node-api-starter.git
+mv node-api-starter my-api
+cd my-api
+npm i // yarn
+```
 
-```bash
+ - Remove git history and create your own:
+```
 rm -rf .git
 git init
+git add .
+git commit -m ":zap: Init project"
+```
+
+ - Run server
+```
+npm start // yarn start
+```
+
+ - Run tests
+```
+npm t // yarn test
 ```
 
 ## Steps done to create this project
 
-No generator here, project created from scratch
-
 ### App
 
- - Update your node version: `n latest` (Using [n](https://github.com/tj/n)) (9.9 at the time of writing)
+ - Update your node version: `n latest` (Using [n](https://github.com/tj/n) or [nvm](https://github.com/creationix/nvm)) (9.9 at the time of writing)
  - Create a new folder and run `npm init --yes`
  - `npm i express`
  - Copy-paste the first code sample on [express github](https://github.com/expressjs/express)
