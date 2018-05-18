@@ -3,6 +3,17 @@
   "version": "0.2.0",
   "description": "Simple starting point to create a Node.js API",
   "main": "server.js",
+  "keywords": ["nodejs", "express", "starter"],
+  "author": "Cedric Nicoloso <cedric.nicoloso@gmail.com>",
+  "license": "ISC",
+  "engines": {
+    "node": "8.x",
+    "npm": "5.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cedric25/node-api-starter.git"
+  },
   "scripts": {
     "start": "npm run start:dev",
     "start:dev": "PORT=3001 node server | npx bunyan --time local --output short",
@@ -11,9 +22,6 @@
     "test": "FORCE_COLOR=true jest | npx bunyan --time local --output short",
     "lint": "eslint . --ext .js"
   },
-  "keywords": [],
-  "author": "Cedric Nicoloso <cedric.nicoloso@gmail.com>",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
     "bunyan": "^1.8.12",
