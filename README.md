@@ -1,9 +1,9 @@
 # node-starter
 
-Simple starting point to create a Node.js API.
+Simple starting point to create a Node.js API with express.
 
 Includes:
- - One route: `/` (GET + POST)
+ - Two endpoints: `/` (GET + POST)
  - Test stack with [jest](https://facebook.github.io/jest/)
  - ESLint with [standard](https://standardjs.com/)
  - Logs with [bunyan](https://github.com/trentm/node-bunyan)
@@ -42,13 +42,14 @@ npm t // yarn test
 
 ### App
 
- - Update your node version: `n latest` (Using [n](https://github.com/tj/n) or [nvm](https://github.com/creationix/nvm)) (9.9 at the time of writing)
+ - Check your node version: `n latest` (Using [n](https://github.com/tj/n) or [nvm](https://github.com/creationix/nvm))
  - Create a new folder and run `npm init --yes`
  - `npm i express`
  - Copy-paste the first code sample on [express github](https://github.com/expressjs/express)
  - Create a npm script in package.json: `"start": "node server"`
  - Try it: `npm start`
- - In dev, use [nodemon](https://github.com/remy/nodemon) to run your server
+ - In dev, you can use [nodemon](https://github.com/remy/nodemon) to run your server
+ - Add [body-parser](https://github.com/expressjs/body-parser) middleware and create a POST endpoint
 
 ### Git
 
