@@ -45,7 +45,7 @@ npm t // yarn test
  - Check your node version: `n latest` (Using [n](https://github.com/tj/n) or [nvm](https://github.com/creationix/nvm))
  - Create a new folder and run `npm init --yes`
  - `npm i express`
- - Copy-paste the first code sample on [express github](https://github.com/expressjs/express)
+ - Copy-paste the first code sample from express '[Getting Started](http://expressjs.com/en/starter/hello-world.html)'
  - Create a npm script in package.json: `"start": "node server"`
  - Try it: `npm start`
  - In dev, you can use [nodemon](https://github.com/remy/nodemon) to run your server
