@@ -49,7 +49,6 @@ npm t // yarn test
  - Create a npm script in package.json: `"start": "node server"`
  - Try it: `npm start`
  - In dev, you can use [nodemon](https://github.com/remy/nodemon) to run your server
- - Add [body-parser](https://github.com/expressjs/body-parser) middleware and create a POST endpoint
 
 ### Git
 
