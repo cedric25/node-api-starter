@@ -63,11 +63,11 @@ npm t // yarn test
  - Add a proper npm script: `"test": "jest"`
  - Test it: `npm t`
 
-### ESLint
+### Prettier
 
- - Install [all necessary dependencies](https://github.com/standard/eslint-config-standard) to use [Standard](https://standardjs.com/) through ESLint
- - Create your .eslintrc file
- - Add a proper npm script `"lint": "eslint . --ext .js"`
+ - Install [Prettier](https://github.com/prettier/prettier)
+ - Create your .prettierrc file
+ - Add two npm script `"lint": "prettier src --check"` and `"lint:fix": "prettier src --write"`
  - Test it: `npm run lint`
 
 ### Logs (bunyan)
