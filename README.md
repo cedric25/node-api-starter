@@ -80,7 +80,3 @@ npm t
 
  - `npm i morgan`
  - Use it in the express server: `app.use(morgan('tiny'))`
-
-### editorconfig
-
- - Add a quick editorconfig to maintain common formatting rules across team members
