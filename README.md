@@ -13,10 +13,10 @@ Includes:
 
  - Clone this project
 ```
-git clone https://github.com/cedric25/node-api-starter.git
-mv node-api-starter my-api
+git clone https://github.com/cedric25/node-api-starter.git my-api
 cd my-api
-npm i // yarn
+nvm use
+npm i
 ```
 
  - Remove git history and create your own:
@@ -29,13 +29,13 @@ git commit -m ":zap: Init project"
 
  - Run server
 ```
-npm start // yarn start
-npm run start:debug // yarn start:debug
+npm start
+npm run start:debug
 ```
 
  - Run tests
 ```
-npm t // yarn test
+npm t
 ```
 
 ## Steps done to create this project
