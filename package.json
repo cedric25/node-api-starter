@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "description": "Simple starting point to create a Node.js API",
   "main": "server.js",
+  "type": "module",
   "keywords": [
     "nodejs",
     "express",
