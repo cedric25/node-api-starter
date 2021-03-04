@@ -11,8 +11,8 @@
   "author": "Cedric Nicoloso <cedric.nicoloso@gmail.com>",
   "license": "ISC",
   "engines": {
-    "node": "8.x",
-    "npm": "5.x"
+    "node": "14.x",
+    "npm": "6.x"
   },
   "repository": {
     "type": "git",
