@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "npm run start:dev",
-    "dev": "PORT=3001 node server | npx bunyan --time local --output short",
+    "dev": "node -r dotenv/config server.js | npx bunyan --time local --output short",
     "start:debug": "LOG_LEVEL=debug npm run start:dev",
     "start:prod": "NODE_ENV=production node server",
     "test": "FORCE_COLOR=true jest | npx bunyan --time local --output short",
@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "bunyan": "1.8.15",
+    "dotenv": "8.2.0",
     "express": "4.17.1",
     "morgan": "1.10.0"
   },

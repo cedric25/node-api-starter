@@ -80,3 +80,7 @@ npm t
 
  - `npm i morgan`
  - Use it in the express server: `app.use(morgan('tiny'))`
+
+### dotenv
+
+ - Use [dotenv](https://github.com/motdotla/dotenv) with the `.env` file to set your environment variables for your local environment.
