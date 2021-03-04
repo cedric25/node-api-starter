@@ -5,7 +5,7 @@ Simple starting point to create a Node.js API with express.
 Includes:
  - Two endpoints: `/` (GET + POST)
  - Test stack with [jest](https://facebook.github.io/jest/)
- - ESLint with [standard](https://standardjs.com/)
+ - [Prettier](https://prettier.io/)
  - Logs with [bunyan](https://github.com/trentm/node-bunyan)
  - Access logs with [morgan](https://github.com/expressjs/morgan)
 
