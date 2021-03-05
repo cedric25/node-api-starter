@@ -20,10 +20,9 @@
     "url": "git+https://github.com/cedric25/node-api-starter.git"
   },
   "scripts": {
-    "start": "npm run start:dev",
-    "dev": "nodemon -r dotenv/config server.js | npx bunyan --time local --output short",
-    "start:debug": "LOG_LEVEL=debug npm run start:dev",
-    "start:prod": "NODE_ENV=production node server",
+    "start": "node src/server.js",
+    "dev": "nodemon -r dotenv/config src/server.js | npx bunyan --time local --output short",
+    "dev:debug": "LOG_LEVEL=debug npm run dev",
     "test": "FORCE_COLOR=true jest | npx bunyan --time local --output short",
     "lint": "prettier src --check",
     "lint:fix": "prettier src --write"
