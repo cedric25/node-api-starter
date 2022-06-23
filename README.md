@@ -4,10 +4,12 @@ Simple starting point to create a Node.js API with express.
 
 Includes:
  - Two endpoints: `/` (GET + POST)
- - Test stack with [jest](https://facebook.github.io/jest/)
- - [Prettier](https://prettier.io/)
+ - Tests with [jest](https://facebook.github.io/jest/)
+ - Code style with [Prettier](https://prettier.io/)
+ - Code quality with [ESLint](https://github.com/eslint/eslint)
  - Logs with [pino](https://github.com/pinojs/pino)
  - Access logs with [morgan](https://github.com/expressjs/morgan)
+ - Environment variables wit [dotenv](https://github.com/motdotla/dotenv)
 
 ## How to use
 
@@ -103,3 +105,5 @@ npm t
 ### dotenv
 
  - Use [dotenv](https://github.com/motdotla/dotenv) with the `.env` file to set your environment variables for your local environment.
+
+Also worth having a look at [dotenv-flow](https://github.com/kerimdzhanov/dotenv-flow) and [dotenv-flow-cli](https://github.com/ovos/dotenv-flow-cli) if for example you need non-committed env vars in a `.env.local` file.
