@@ -26,8 +26,11 @@
     "test:unit": "NODE_OPTIONS=--experimental-vm-modules npx jest .*.spec.js",
     "test:int": "NODE_OPTIONS=--experimental-vm-modules npx jest .*.test.js",
     "test": "npm run test:unit & npm run test:int",
-    "lint": "prettier src --check",
-    "lint:fix": "prettier src --write"
+    "lint": "npm run prettier && npm run eslint",
+    "prettier": "prettier src --check",
+    "prettier:fix": "prettier src --write",
+    "eslint": "eslint src",
+    "eslint:fix": "eslint src --fix"
   },
   "dependencies": {
     "dotenv": "16.0.1",
@@ -36,6 +39,8 @@
     "pino": "8.1.0"
   },
   "devDependencies": {
+    "eslint": "8.18.0",
+    "eslint-plugin-jest": "26.5.3",
     "jest": "28.1.1",
     "nodemon": "2.0.16",
     "pino-pretty": "8.1.0",

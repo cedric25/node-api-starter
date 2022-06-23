@@ -60,18 +60,34 @@ npm t
 
 ### Tests
 
- - Extract the 'app' logic of your server to scr/app.js
+#### Unit
+
+ - Extract the 'app' logic of your server to `src/app.js`
+ - Create a small test (`./src/utils/utils.spec.js`)
+ - Add convenient npm script (See `"test:unit"` in `package.json`)
+ - Test it: `npm run test:unit`
+
+#### Integration
+
  - `npm i jest supertest --save-dev`
- - Create a small test (./test/home.spec.js)
- - Add a proper npm script: `"test": "jest"`
- - Test it: `npm t`
+ - Create a small test (`./src/app.test.js`)
+ - Add convenient npm scripts (See `"test:int"` and `"test"` in `package.json`)
+ - Test it: `npm run test:int`
 
 ### Prettier
 
  - Install [Prettier](https://github.com/prettier/prettier)
- - Create your .prettierrc file
- - Add two npm script `"lint": "prettier src --check"` and `"lint:fix": "prettier src --write"`
- - Test it: `npm run lint`
+ - Create your `.prettierrc` file
+ - Add two npm scripts `"prettier": "prettier src --check"` and `"prettier:fix": "prettier src --write"`
+ - Test it: `npm run prettier`
+
+### ESLint
+
+ - Install [ESLint](https://github.com/eslint/eslint)
+ - Init a config file: `npm init @eslint/config`
+ - Tell ESLint about Jest: `npm i eslint-plugin-jest -D` and use it for test files (See `overrides` section in `.eslintrc.cjs`)
+ - Add two npm scripts `"eslint"` and `"eslint:fix"`
+ - Test it: `npm run eslint`
 
 ### Logs (pino)
 

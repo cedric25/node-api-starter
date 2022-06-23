@@ -1,9 +1,9 @@
 import request from 'supertest'
-import { app } from '../app'
+import { app } from './app.js'
 
 // --- Integration test
-describe('Test the root path', () => {
-  test('It should answer to the GET method', async () => {
+describe('when GET on the root path', () => {
+  it('should answer with a 200', async () => {
     const response = await request(app).get('/')
     expect(response.statusCode).toBe(200)
   })
