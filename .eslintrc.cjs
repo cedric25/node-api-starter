@@ -16,7 +16,7 @@ module.exports = {
       files: ['**/*.spec.js', '**/*.test.js'],
       extends: ['plugin:jest/all'],
       rules: {
-        'jest/prefer-expect-assertions': ['off'], // To annoying, let's disable it for now
+        'jest/prefer-expect-assertions': ['off'], // Too annoying, let's disable it for now
       },
     },
   ],
