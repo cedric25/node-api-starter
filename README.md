@@ -57,8 +57,8 @@ npm t
 
 ### Git
 
- - git init
- - Create .gitignore (Inspiration [here](https://github.com/github/gitignore/blob/master/Node.gitignore))
+ - `git init`
+ - Create `.gitignore` (Inspiration [here](https://github.com/github/gitignore/blob/master/Node.gitignore))
 
 ### Tests
 
