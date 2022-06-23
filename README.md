@@ -6,7 +6,7 @@ Includes:
  - Two endpoints: `/` (GET + POST)
  - Test stack with [jest](https://facebook.github.io/jest/)
  - [Prettier](https://prettier.io/)
- - Logs with [bunyan](https://github.com/trentm/node-bunyan)
+ - Logs with [pino](https://github.com/pinojs/pino)
  - Access logs with [morgan](https://github.com/expressjs/morgan)
 
 ## How to use
@@ -30,7 +30,10 @@ git commit -m ":zap: Init project"
  - Run server
 ```
 npm start
-npm run start:debug
+or  
+npm run dev  
+or  
+npm run dev:debug
 ```
 
  - Run tests
@@ -70,11 +73,11 @@ npm t
  - Add two npm script `"lint": "prettier src --check"` and `"lint:fix": "prettier src --write"`
  - Test it: `npm run lint`
 
-### Logs (bunyan)
+### Logs (pino)
 
- - `npm i bunyan`
+ - `npm i pino`
+ - `npm i pino-pretty -D`
  - Create the config you wish such as in `src/logger.js`
- - Create a npm script that uses bunyan CLI (Makes logs more readable in dev)
 
 ### Access logs (morgan)
 

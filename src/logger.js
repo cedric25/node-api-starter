@@ -1,11 +1,6 @@
-import bunyan from 'bunyan'
+import pino from 'pino'
 
-export default bunyan.createLogger({
+export default pino({
   name: 'my-super-api',
-  streams: [
-    {
-      level: process.env.LOG_LEVEL || 'info',
-      stream: process.stdout,
-    },
-  ],
+  level: process.env.LOG_LEVEL || 'info',
 })
