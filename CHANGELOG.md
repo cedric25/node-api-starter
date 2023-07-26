@@ -3,6 +3,7 @@
 - Required node from v18 to v20
 - Move from express to fastify
 - Add zod to validate and parse environment variables
+- Move to TypeScript
 
 ## 0.3.0 (2022-06-23)
 
