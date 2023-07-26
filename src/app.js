@@ -1,19 +1,16 @@
-import express from 'express'
-import morgan from 'morgan'
+import Fastify from 'fastify'
 import logger from './logger.js'
 import { add } from './utils/utils.js'
 
-export const app = express()
+export const app = Fastify({ logger: true })
 
-app.use(morgan('tiny'))
-
-app.get('/', (req, res) => {
+app.get('/', (request, reply) => {
   logger.debug('Handling request for endpoint: GET /')
   const result = add(2, 2)
-  res.send(`Hello World, result is ${result}`)
+  reply.send(`Hello World, result is ${result}`)
 })
 
-app.post('/', express.json(), (req, res) => {
+app.post('/', (request, reply) => {
   logger.debug('Handling request for endpoint: POST /')
-  res.send(`You sent me ${JSON.stringify(req.body)}`)
+  reply.send(`You sent me ${JSON.stringify(request.body)}`)
 })

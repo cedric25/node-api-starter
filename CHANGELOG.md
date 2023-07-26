@@ -1,3 +1,8 @@
+## 0.4.0 (2023-07-26)
+
+- Required node from v18 to v20
+- Move from express to fastify
+
 ## 0.3.0 (2022-06-23)
 
 - Bump node from v14 to v18
