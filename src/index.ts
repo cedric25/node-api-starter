@@ -1,6 +1,6 @@
-import logger from './logger.js'
-import { app } from './app.js'
-import { env } from './env.js'
+import logger from './logger'
+import { app } from './app'
+import { env } from './env'
 
 const port = env.PORT || 3000
 

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2020",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "outDir": "dist",
+
+    // Skip type checking all .d.ts files
+    // Set it to true to improve TS compilation performance
+    // See more here: https://www.youtube.com/watch?v=zu-EgnbmcLY
+    // Or here: https://github.com/vuejs/vue-cli/pull/5688
+    "skipLibCheck": true
+  },
+  "ts-node": {
+    "transpileOnly": true
+  }
+}

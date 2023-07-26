@@ -3,7 +3,6 @@
   "version": "0.6.0",
   "description": "Simple starting point to create a Node.js API",
   "main": "server.js",
-  "type": "module",
   "keywords": [
     "nodejs",
     "fastify",
@@ -20,8 +19,9 @@
     "url": "git+https://github.com/cedric25/node-api-starter.git"
   },
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon -r dotenv/config src/index.js | pino-pretty -tc",
+    "build": "rimraf ./dist && tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon -r dotenv/config src/index.ts | pino-pretty -tc",
     "dev:debug": "LOG_LEVEL=debug npm run dev",
     "test:unit": "NODE_OPTIONS=--experimental-vm-modules npx jest .*.spec.js",
     "test:int": "NODE_OPTIONS=--experimental-vm-modules npx jest .*.test.js",

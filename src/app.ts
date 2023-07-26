@@ -1,6 +1,6 @@
 import Fastify from 'fastify'
-import logger from './logger.js'
-import { add } from './utils/utils.js'
+import logger from './logger'
+import { add } from './utils/utils'
 
 export const app = Fastify({ logger: true })
 
