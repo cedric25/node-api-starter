@@ -1,0 +1,64 @@
+name: ci-main
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  TZ: Europe/Paris
+
+jobs:
+  build:
+    name: Build
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Common steps
+        uses: ./.github/actions/common-steps
+
+      - name: Build
+        run: npm run build
+
+  lint:
+    name: Lint
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Common steps
+        uses: ./.github/actions/common-steps
+
+      - name: Lint with Prettier
+        run: npm run prettier
+
+      - name: Lint with ESLint
+        run: npm run eslint
+
+  test:
+    name: Test
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Common steps
+        uses: ./.github/actions/common-steps
+
+      - name: Test
+        run: npm run test
+        env:
+          NODE_ENV: test
