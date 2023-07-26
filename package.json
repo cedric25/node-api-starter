@@ -1,6 +1,6 @@
 {
   "name": "start-node",
-  "version": "0.6.0",
+  "version": "0.4.0",
   "description": "Simple starting point to create a Node.js API",
   "main": "server.js",
   "keywords": [
