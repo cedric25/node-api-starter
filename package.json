@@ -30,7 +30,9 @@
     "prettier": "prettier src --check",
     "prettier:fix": "prettier src --write",
     "eslint": "eslint src",
-    "eslint:fix": "eslint src --fix"
+    "eslint:fix": "eslint src --fix",
+    "bump-to-minor-versions": "npx --yes npm-check-updates -u --target minor",
+    "bump-to-patch-versions": "npx --yes npm-check-updates -u --target patch"
   },
   "dependencies": {
     "dotenv": "16.3.1",
