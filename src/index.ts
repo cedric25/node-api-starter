@@ -1,14 +1,18 @@
 import logger from './logger'
-import { app } from './app'
+import { buildFastify } from './app'
 import { env } from './env'
 
 const port = env.PORT || 3000
 
+const server = buildFastify({
+  logger: true,
+})
+
 const start = async () => {
   try {
-    await app.listen({ port })
+    await server.listen({ port })
   } catch (err) {
-    app.log.error(err)
+    server.log.error(err)
     process.exit(1)
   }
 }

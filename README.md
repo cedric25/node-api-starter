@@ -82,8 +82,11 @@ npm t
 
 #### Integration
 
- - `npm i jest supertest --save-dev`
- - Create a small test (`./src/app.test.js`)
+Made with [fastify.inject()](https://fastify.dev/docs/latest/Guides/Testing/)
+
+ - Create a mocha options file: `test/int/.mocharc.int.js`
+ - Create a setup file to start the server prior to the tests: `test/int/setup.ts`
+ - Create a small test (`./src/app.test.ts`)
  - Add convenient npm scripts (See `"test:int"` and `"test"` in `package.json`)
  - Test it: `npm run test:int`
 
