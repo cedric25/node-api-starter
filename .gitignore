@@ -35,3 +35,4 @@ typings/
 
 # sqlite db files
 prisma/db/dev.db
+prisma/db/test.db

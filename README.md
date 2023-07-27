@@ -26,7 +26,11 @@ curl -X POST \
 ```
 git clone https://github.com/cedric25/node-api-starter.git my-api
 cd my-api
-nvm use
+
+# Optionnaly:
+git checkout with-prisma
+
+(nvm use)
 npm i
 ```
 

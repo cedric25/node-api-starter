@@ -3,7 +3,7 @@ import { expect } from 'chai'
 // --- Integration test
 describe('when GET on the root path', function () {
   it('should answer with a 200', async function () {
-    const response = await this.app.inject({
+    const response = await this.serverInstance.inject({
       method: 'GET',
       url: '/',
     })

@@ -1,5 +1,6 @@
 import plugin from 'fastify-plugin'
 import { PrismaClient } from '@prisma/client'
+import { env } from '../../env'
 
 const prismaClient = new PrismaClient()
 
