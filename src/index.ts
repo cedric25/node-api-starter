@@ -1,5 +1,5 @@
 import logger from './logger'
-import { buildFastify } from './app'
+import { buildFastify } from './app/app'
 import { env } from './env'
 
 const port = env.PORT || 3000
@@ -16,6 +16,11 @@ const start = async () => {
     process.exit(1)
   }
 }
+
+server.addHook('onClose', async instance => {
+  logger.info('fastify hook onClose')
+  await instance.db.$disconnect()
+})
 
 start()
 

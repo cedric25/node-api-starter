@@ -1,9 +1,14 @@
 import Fastify from 'fastify'
-import logger from './logger'
-import { add } from './utils/utils'
+import logger from '../logger'
+import { add } from '../utils/utils'
+import plugins from './plugins/index'
+import routes from './routes/index'
 
 export function buildFastify(fastifyOptions = {}) {
   const app = Fastify(fastifyOptions)
+
+  app.register(plugins)
+  app.register(routes)
 
   app.get('/', (request, reply) => {
     logger.debug('Handling request for endpoint: GET /')

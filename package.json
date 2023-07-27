@@ -35,8 +35,11 @@
     "bump-to-patch-versions": "npx --yes npm-check-updates -u --target patch"
   },
   "dependencies": {
+    "@prisma/client": "5.0.0",
     "fastify": "4.20.0",
+    "fastify-plugin": "4.5.1",
     "pino": "8.14.1",
+    "prisma": "5.0.0",
     "zod": "3.21.4"
   },
   "devDependencies": {

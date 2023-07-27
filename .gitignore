@@ -32,3 +32,6 @@ typings/
 
 # dotenv environment variables file
 .env.local
+
+# sqlite db files
+prisma/db/dev.db
